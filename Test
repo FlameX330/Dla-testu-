@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja strona</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Siema 👋</h1>
+    <p>To moja pierwsza strona!</p>
+
+    <button onclick="pokazTekst()">Kliknij mnie</button>
+
+    <p id="tekst"></p>
+
+    <script>
+        function pokazTekst() {
+            document.getElementById("tekst").innerText = "Działa! 🔥";
+        }
+    </script>
+
+</body>
+</html>
